@@ -2,14 +2,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
 
 module.exports = {
-  devServer: {
-    hot: true,
-    inline: true
-  },
-  entry: [
-    'webpack-hot-middleware/client?reload=true',
-    __dirname + '/src/index.js',
-  ],
+  entry: __dirname + '/src/index.js',
 
   output: {
     publicPath: '/assets/',
