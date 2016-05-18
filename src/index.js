@@ -48,7 +48,6 @@ function unsetContentBody($elm) {
 }
 
 $(".chopped-image > .half").click(function(event) {
-  console.log('.chopped-image > .half');
   var $elm = $(event.target);
   var $parent = $elm.parent();
   var selection = $elm.data('selection');
@@ -58,7 +57,6 @@ $(".chopped-image > .half").click(function(event) {
 });
 
 $(".chopped-image > .whole").click(function(event) {
-  console.log('.chopped-image > .whole');
   var $elm = $(event.target);
   var $parent = $elm.parent();
 
