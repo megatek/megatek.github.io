@@ -1,0 +1,41 @@
+@import 'bootstrap';
+@import 'bootstrap-theme';
+
+$half-image-size: 100%;
+
+.half-images {
+  div {
+    display: inline-block;
+    -webkit-border-radius: $half-image-size;
+    -moz-border-radius: $half-image-size;
+    border-radius: $half-image-size;
+    border: none;
+    width: $half-image-size;
+    height: $half-image-size;
+    background-size: $half-image-size $half-image-size;
+
+    &.akira {
+      background-image: url('/assets/images/me_square_bw.jpg');
+    }
+
+    &.nick {
+      background-image: url('/assets/images/me_square.jpg');
+    }
+
+    &.left {
+      background-position: left;
+      width: ($half-image-size / 2);
+      border-radius: $half-image-size 0 0 $half-image-size;
+      -moz-border-radius: $half-image-size 0 0 $half-image-size;
+      -webkit-border-radius: $half-image-size 0 0 $half-image-size;
+    }
+
+    &.right {
+      background-position: right;
+      width: ($half-image-size / 2);
+      border-radius: 0 $half-image-size $half-image-size 0;
+      -moz-border-radius: 0 $half-image-size $half-image-size 0;
+      -webkit-border-radius: 0 $half-image-size $half-image-size 0;
+    }
+  }
+}
