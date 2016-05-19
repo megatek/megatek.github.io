@@ -2,6 +2,8 @@
 @import 'reset';
 @import 'flexboxgrid';
 
+// @import 'circle';
+
 // @import 'bootstrap';
 // @import 'bootstrap-theme';
 
@@ -87,7 +89,13 @@ a.logo {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  #content-image {
+    margin: 0;
+  }
 }
 
 .akira {
