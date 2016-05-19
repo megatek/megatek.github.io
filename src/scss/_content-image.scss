@@ -1,11 +1,12 @@
 #content-image {
   .chopped-image {
+    margin: auto;
     border: 4px solid $loud-color;
-    -webkit-border-radius: $chopped-image-size;
-    -moz-border-radius: $chopped-image-size;
-    border-radius: $chopped-image-size;
-    width: $chopped-image-size;
-    height: $chopped-image-size;
+    -webkit-border-radius: $chopped-image-size-sm;
+    -moz-border-radius: $chopped-image-size-sm;
+    border-radius: $chopped-image-size-sm;
+    width: $chopped-image-size-sm;
+    height: $chopped-image-size-sm;
 
     &.selected {
       .half {
@@ -16,13 +17,13 @@
     }
 
     .whole {
-      -webkit-border-radius: $chopped-image-size;
-      -moz-border-radius: $chopped-image-size;
-      border-radius: $chopped-image-size;
+      -webkit-border-radius: $chopped-image-size-sm;
+      -moz-border-radius: $chopped-image-size-sm;
+      border-radius: $chopped-image-size-sm;
       border: none;
-      width: $chopped-image-size;
-      height: $chopped-image-size;
-      background-size: $chopped-image-size $chopped-image-size;
+      width: $chopped-image-size-sm;
+      height: $chopped-image-size-sm;
+      background-size: $chopped-image-size-sm $chopped-image-size-sm;
 
       visibility: visible;
       opacity: 1;
@@ -47,13 +48,13 @@
     .half {
       float: left;
       display: inline-block;
-      -webkit-border-radius: $chopped-image-size;
-      -moz-border-radius: $chopped-image-size;
-      border-radius: $chopped-image-size;
+      -webkit-border-radius: $chopped-image-size-sm;
+      -moz-border-radius: $chopped-image-size-sm;
+      border-radius: $chopped-image-size-sm;
       border: none;
-      width: $chopped-image-size;
-      height: $chopped-image-size;
-      background-size: $chopped-image-size $chopped-image-size;
+      width: $chopped-image-size-sm;
+      height: $chopped-image-size-sm;
+      background-size: $chopped-image-size-sm $chopped-image-size-sm;
 
       visibility: visible;
       opacity: 1;
@@ -77,19 +78,19 @@
 
       &.left {
         background-position: left;
-        width: (($chopped-image-size / 2) - 2);
-        border-radius: $chopped-image-size 0 0 $chopped-image-size;
-        -moz-border-radius: $chopped-image-size 0 0 $chopped-image-size;
-        -webkit-border-radius: $chopped-image-size 0 0 $chopped-image-size;
+        width: (($chopped-image-size-sm / 2) - 2);
+        border-radius: $chopped-image-size-sm 0 0 $chopped-image-size-sm;
+        -moz-border-radius: $chopped-image-size-sm 0 0 $chopped-image-size-sm;
+        -webkit-border-radius: $chopped-image-size-sm 0 0 $chopped-image-size-sm;
         border-right: 2px solid $loud-color;
       }
 
       &.right {
         background-position: right;
-        width: (($chopped-image-size / 2) - 2);
-        border-radius: 0 $chopped-image-size $chopped-image-size 0;
-        -moz-border-radius: 0 $chopped-image-size $chopped-image-size 0;
-        -webkit-border-radius: 0 $chopped-image-size $chopped-image-size 0;
+        width: (($chopped-image-size-sm / 2) - 2);
+        border-radius: 0 $chopped-image-size-sm $chopped-image-size-sm 0;
+        -moz-border-radius: 0 $chopped-image-size-sm $chopped-image-size-sm 0;
+        -webkit-border-radius: 0 $chopped-image-size-sm $chopped-image-size-sm 0;
         border-left: 2px solid $loud-color;
       }
     }
@@ -97,6 +98,52 @@
     div {
       &:hover {
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width:961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  #content-image {
+    .chopped-image {
+      -webkit-border-radius: $chopped-image-size-lg;
+      -moz-border-radius: $chopped-image-size-lg;
+      border-radius: $chopped-image-size-lg;
+      width: $chopped-image-size-lg;
+      height: $chopped-image-size-lg;
+
+      .whole {
+        -webkit-border-radius: $chopped-image-size-lg;
+        -moz-border-radius: $chopped-image-size-lg;
+        border-radius: $chopped-image-size-lg;
+        width: $chopped-image-size-lg;
+        height: $chopped-image-size-lg;
+        background-size: $chopped-image-size-lg $chopped-image-size-lg;
+      }
+
+      .half {
+        -webkit-border-radius: $chopped-image-size-lg;
+        -moz-border-radius: $chopped-image-size-lg;
+        border-radius: $chopped-image-size-lg;
+        width: $chopped-image-size-lg;
+        height: $chopped-image-size-lg;
+        background-size: $chopped-image-size-lg $chopped-image-size-lg;
+
+        &.left {
+          width: (($chopped-image-size-lg / 2) - 2);
+          border-radius: $chopped-image-size-lg 0 0 $chopped-image-size-lg;
+          -moz-border-radius: $chopped-image-size-lg 0 0 $chopped-image-size-lg;
+          -webkit-border-radius: $chopped-image-size-lg 0 0 $chopped-image-size-lg;
+        }
+
+        &.right {
+          width: (($chopped-image-size-lg / 2) - 2);
+          border-radius: 0 $chopped-image-size-lg $chopped-image-size-lg 0;
+          -moz-border-radius: 0 $chopped-image-size-lg $chopped-image-size-lg 0;
+          -webkit-border-radius: 0 $chopped-image-size-lg $chopped-image-size-lg 0;
+        }
       }
     }
   }

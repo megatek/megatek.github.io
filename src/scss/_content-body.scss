@@ -1,9 +1,10 @@
 #content-body {
-  height: $chopped-image-size;
+  padding: 30px;
   transition: visibility 1.5s, opacity 1.5s linear;
+  max-width: 500px;
 
   h3 {
-    font-size: 80px;
+    font-size: 60px;
     margin-bottom: 30px;
     font-family: 'Ubuntu', sans-serif;
   }
@@ -17,5 +18,15 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0s linear;
+  }
+}
+
+@media (min-width:961px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+  #content-body {
+    h3 {
+      font-size: 80px;
+    }
   }
 }
