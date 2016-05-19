@@ -1,0 +1,38 @@
+header {
+  margin-bottom: 20px;
+  margin-top: 17px;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+
+    svg {
+      position: relative;
+      top: 4px;
+    }
+
+    &:active {
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.logo {
+      color: inherit;
+      font-size: 30px;
+
+      &:hover {
+        color: #F3F3F3;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+#content-body {
+  height: $chopped-image-size;
+  transition: visibility 1.5s, opacity 1.5s linear;
+
+  h3 {
+    font-size: 80px;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  p {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+  }
+
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0s linear;
+  }
+}

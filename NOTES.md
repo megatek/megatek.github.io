@@ -10,4 +10,4 @@ https://css-tricks.com/perfect-full-page-background-image/
 - Quality code is only part of what we provide. Our process is built around communication and collaboration to transform your ideas and goals into a finished, shipped product.
 - We build web apps and web based technologies.
 
-Megatek is a two man development team. We build web apps and web based technologies. Quality code is only part of what we provide. Our process is built around communication and collaboration to transform your ideas and goals into a finished, shipped product.
+We are a two man development team. We build and improve web apps. Quality code is only part of what we provide. Our process is built around communication and collaboration to transform your ideas and goals into a finished, shipped product.

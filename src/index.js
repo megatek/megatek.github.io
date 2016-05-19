@@ -40,11 +40,23 @@ function templateFactory(selection) {
 }
 
 function setContentBody($elm, selection) {
-  $elm.html(templateFactory(selection));
+  $elm.addClass('hide');
+  setTimeout(function() {
+    $elm.html(templateFactory(selection));
+    $elm.removeClass('hide');
+  }, 700);
 }
 
 function unsetContentBody($elm) {
-  $elm.html(templateFactory());
+  $elm.addClass('hide');
+  setTimeout(function() {
+    $elm.html(templateFactory());
+    $elm.removeClass('hide');
+  }, 700);
+}
+
+function submitContactForm(event) {
+  console.log('blah');
 }
 
 $(".chopped-image > .half").click(function(event) {
