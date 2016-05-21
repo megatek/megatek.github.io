@@ -9,6 +9,8 @@ header {
     svg {
       position: relative;
       top: 5px;
+
+      stroke: $loud-color;
     }
 
     &:active {

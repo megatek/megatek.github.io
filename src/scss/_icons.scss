@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'icomoon';
+  src:    url('/assets/fonts/icomoon.eot?3qwcpr');
+  src:    url('/assets/fonts/icomoon.eot?3qwcpr#iefix') format('embedded-opentype'),
+      url('/assets/fonts/icomoon.ttf?3qwcpr') format('truetype'),
+      url('/assets/fonts/icomoon.woff?3qwcpr') format('woff'),
+      url('/assets/fonts/icomoon.svg?3qwcpr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sphere:before {
+    content: "\e9c9";
+}
+.icon-earth:before {
+    content: "\e9ca";
+}
+.icon-point-up:before {
+    content: "\ea03";
+}
+.icon-mail:before {
+    content: "\ea86";
+}
+.icon-github:before {
+    content: "\eab0";
+}
+.icon-linkedin:before {
+    content: "\eac9";
+}
+.icon-linkedin2:before {
+    content: "\eaca";
+}

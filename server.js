@@ -11,6 +11,7 @@ app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output
 app.use(webpackHotMiddleware(compiler));
 
 app.use('/assets/images', express.static(__dirname + '/assets/images'));
+app.use('/assets/fonts', express.static(__dirname + '/assets/fonts'));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname+'/index.html'));

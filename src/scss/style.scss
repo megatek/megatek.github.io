@@ -2,9 +2,11 @@
 @import 'reset';
 // @import 'flexboxgrid';
 
+@import 'icons';
 @import 'header';
 @import 'content-image';
 @import 'content-body';
+@import 'social';
 
 html, body {
   min-height: 700px;
@@ -19,8 +21,14 @@ body {
 
   // background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/apollo11_buzz.jpg') no-repeat center center fixed;
   // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/moonprint.jpg') no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/apollo17.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/images/apollo17.jpg') no-repeat center center fixed;
   background-size: cover;
+
+  // Preload background images
+  content: url('/assets/images/akira.jpg')
+           url('/assets/images/nick.jpg')
+           url('/assets/images/akira_bw.jpg')
+           url('/assets/images/nick_bw.jpg');
 }
 
 .container {
@@ -40,7 +48,8 @@ body {
 .content-box {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   margin: 0 5px;
-  border: 4px solid $loud-color;
+  // border: 4px solid $loud-color;
+  border-right: 6px solid $loud-color;
   padding-top: 30px;
 }
 
