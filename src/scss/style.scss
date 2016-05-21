@@ -37,6 +37,9 @@ body {
   flex-direction: column;
 }
 
+.top-bumper { margin-top: 30px; }
+.bottom-bumper { margin-bottom: 30px; }
+
 .content-container {
   display: flex;
   flex-direction: row;
