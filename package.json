@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Make sure you have webpack-dev-server installed     npm install webpack-dev-server -g",
   "main": "webpack.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "serve-favicon": "^2.3.0"
+  },
   "devDependencies": {
     "css-loader": "^0.23.1",
     "express": "^4.13.4",
