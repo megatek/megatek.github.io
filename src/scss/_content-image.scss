@@ -61,18 +61,22 @@
       transition: visibility 0.5s, opacity 0.5s linear;
 
       &.akira {
-        background-image: url('/assets/images/akira_bw.jpg');
+        // background-image: url('/assets/images/akira_bw.jpg');
+        background-image: url('/assets/images/akira.jpg');
 
         &:hover {
-          background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/assets/images/akira_bw.jpg');
+          // background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/assets/images/akira_bw.jpg');
+          background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/assets/images/akira.jpg');
         }
       }
 
       &.nick {
-        background-image: url('/assets/images/nick_bw.jpg');
+        // background-image: url('/assets/images/nick_bw.jpg');
+        background-image: url('/assets/images/nick.jpg');
 
         &:hover {
-          background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/assets/images/nick_bw.jpg');
+          // background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/assets/images/nick_bw.jpg');
+          background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/assets/images/nick.jpg');
         }
       }
 
